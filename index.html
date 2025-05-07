@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SF Market | Venta Mayorista</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; scroll-behavior: smooth; }
+    header { background: #0078C2; color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); }
+    header h1 { margin: 0; font-size: 1.8rem; }
+    nav a { color: white; margin-left: 1.5rem; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+    nav a:hover { color: #aee9ff; }
+    .hero { background: linear-gradient(to bottom, #009fe3, #0078c2); padding: 4rem 2rem; text-align: center; color: white; animation: fadeIn 1.5s ease-out; }
+    .hero h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; }
+    .section { padding: 2rem; animation: fadeInUp 1s ease-out; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 1.5rem; }
+    .product { background: white; padding: 1rem; border-radius: 0.5rem; box-shadow: 0 2px 10px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s; }
+    .product:hover { transform: translateY(-5px); box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
+    .product h3 { margin-top: 0; }
+    .contact-form { display: flex; flex-direction: column; max-width: 600px; margin: auto; }
+    .contact-form input, .contact-form textarea { padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 0.25rem; }
+    .contact-form button { background: #0078C2; color: white; border: none; padding: 0.75rem; cursor: pointer; border-radius: 0.25rem; font-weight: bold; transition: background 0.3s; }
+    .contact-form button:hover { background: #005e9e; }
+    footer { background: #0078C2; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SF Market</h1>
+    <nav>
+      <a href="#productos">Productos</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Ventas Mayoristas</h2>
+    <p>Artículos importados por venta en cantidad</p>
+  </div>
+
+  <section class="section" id="productos">
+    <h2>Productos destacados</h2>
+    <div class="products">
+      <div class="product">
+        <h3>Smartwatch W8 Ultra</h3>
+        <p><strong>USD 6.87</strong><br />Mínimo: 100 unidades</p>
+        <p>Compatible con FitPro. Pantalla 2.01". IP65. Precio escalonado disponible.</p>
+      </div>
+      <div class="product">
+        <h3>Excavadora R/C Metálica</h3>
+        <p><strong>USD 41.45</strong><br />Mínimo: 10 unidades</p>
+        <p>Escala 1:16 con 17 canales. Vapor, luces y control 2.4GHz.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="nosotros">
+    <h2>¿Quiénes somos?</h2>
+    <p>Somos distribuidores mayoristas de artículos importados con base en Santa Fe, Argentina. Ofrecemos productos tecnológicos, juguetes electrónicos y más, con envíos a todo el país y precios competitivos.</p>
+  </section>
+
+  <section class="section" id="contacto">
+    <h2>Contacto</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Nombre completo" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <textarea placeholder="Consulta o pedido" rows="5" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 SF Market. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
